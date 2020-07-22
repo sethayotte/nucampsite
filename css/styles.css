@@ -3,11 +3,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: "Fredoka One", sans-serif;
 }
 
 h2 {
-    color: blue;
+    color: navy;
 }
 
 header h2 {
@@ -22,12 +22,12 @@ footer {
 
 .jumbotron {
     padding 30px;
-    background-image: linear-gradient(to right, purple, navy, purple);
+    background-image: linear-gradient(to right, purple, navy);
     color: white;
 }
 
 .row-content {
     padding: 50px 0px;
-    border-bottom: 1px ridge;
+    border-bottom: 4px ridge;
     min-height: 200px;
 }
