@@ -21,13 +21,23 @@ footer {
 }
 
 .jumbotron {
+    margin: 0;
     padding 30px;
     background-image: linear-gradient(to right, purple, navy);
     color: white;
+    border-radius: 0%;
 }
 
 .row-content {
     padding: 50px 0px;
     border-bottom: 4px ridge;
     min-height: 200px;
+}
+
+.navbar {
+    background-color: #15016d;
+}
+
+.breadcrumb {
+    margin-bottom: 40px;
 }
