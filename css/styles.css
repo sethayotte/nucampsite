@@ -14,7 +14,7 @@ header h2 {
     color: lightblue;
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(to right, purple, navy);
     padding: 20px 0px;
     color: white;
@@ -41,3 +41,4 @@ footer {
 .breadcrumb {
     margin-bottom: 40px;
 }
+
