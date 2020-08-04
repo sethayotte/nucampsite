@@ -42,3 +42,15 @@ header h2 {
     margin-bottom: 40px;
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: 5px solid navy;
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
