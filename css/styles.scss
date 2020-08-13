@@ -1,0 +1,73 @@
+$color-gradient1: purple;
+$color-gradient2: navy;
+$color-darkblue: #15016d;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Fredoka One", sans-serif;
+
+body {
+    font-family: $body-font
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: navy;
+}
+
+header {
+    h2 {
+    color: lightblue;
+    }
+}
+
+.site-footer {
+    background-image: linear-gradient(to right, $color-gradient1, $color-gradient2);
+    padding: 20px 0px;
+    color: white;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-gradient1, $color-gradient2);
+    color: white;
+    border-radius: 0%;
+}
+
+.row-content {
+    padding: 50px 0px;
+    border-bottom: 4px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: $color-navbar;
+}
+
+.breadcrumb {
+    margin-bottom: 40px;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+.carousel {
+    border: 5px solid $color-darkblue;
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}

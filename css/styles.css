@@ -54,3 +54,10 @@ header h2 {
 .carousel-item img {
     border-radius: 10px;
 }
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
