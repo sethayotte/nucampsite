@@ -6,14 +6,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <!-- endbuild -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">
+
 
         <title>NuCamp: A Better Way To Camp</title>
     </head>
@@ -31,7 +32,7 @@
                     <h2>a better way to camp.</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 col-xs-12 mt-4">
-                    <a data-toggle="modal" data-target="#reserveModal" role="button" class="btn btn-info">Reserve Campsite</a>
+                    <a id="reserveButton" data-target="#reserveModal" role="button" class="btn btn-info">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title ml-3">
                         Reserve a Campsite
                     </h3>
@@ -107,7 +108,7 @@
             <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-md"></i> Contact</a></li>
         </ul>
         <span class="navbar-text ml-auto">
-            <a role="button" data-toggle="modal" data-target="#loginModal">
+            <a role="button" id="loginButton" data-target="#loginModal">
                 <i class="fa fa-sign-in"></i> Login
             </a>
         </span>
@@ -281,26 +282,12 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function() {
-            $(".carousel").carousel( {interval: 7000});
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 

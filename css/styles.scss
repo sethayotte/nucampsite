@@ -2,6 +2,7 @@ $color-gradient1: purple;
 $color-gradient2: navy;
 $color-darkblue: #15016d;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17A2B8;
 
 $body-font: "Open Sans", sans-serif;
 $header-font: "Fredoka One", sans-serif;
@@ -45,7 +46,7 @@ header {
 }
 
 .navbar {
-    background-color: $color-navbar;
+    background-color: $color-darkblue;
 }
 
 .breadcrumb {
@@ -70,4 +71,26 @@ header {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+
+        h3 {
+            color: white;
+            margin-left: 15px;
+        }
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-darkblue;
+        
+        h3 {
+            color: white;
+            margin-left: 15px;
+        }
+    }
 }
