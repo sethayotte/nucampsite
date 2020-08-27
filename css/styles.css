@@ -1,56 +1,84 @@
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: "Fredoka One", sans-serif;
+  font-family: "Fredoka One", sans-serif;
 }
 
 h2 {
-    color: navy;
+  color: navy;
 }
 
 header h2 {
-    color: lightblue;
+  color: lightblue;
 }
 
 .site-footer {
-    background-image: linear-gradient(to right, purple, navy);
-    padding: 20px 0px;
-    color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(purple), to(navy));
+  background-image: linear-gradient(to right, purple, navy);
+  padding: 20px 0px;
+  color: white;
 }
 
 .jumbotron {
-    margin: 0;
-    padding 30px;
-    background-image: linear-gradient(to right, purple, navy);
-    color: white;
-    border-radius: 0%;
+  margin: 0;
+  padding: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(purple), to(navy));
+  background-image: linear-gradient(to right, purple, navy);
+  color: white;
+  border-radius: 0%;
 }
 
 .row-content {
-    padding: 50px 0px;
-    border-bottom: 4px ridge;
-    min-height: 200px;
+  padding: 50px 0px;
+  border-bottom: 4px ridge;
+  min-height: 200px;
 }
 
 .navbar {
-    background-color: #15016d;
+  background-color: #15016d;
 }
 
 .breadcrumb {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel {
-    border: 5px solid navy;
-    border-radius: 15px;
+  border: 5px solid #15016d;
+  border-radius: 15px;
 }
 
 .carousel-item img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+}
+
+#reserveModal .modal-header h3 {
+  color: white;
+  margin-left: 15px;
+}
+
+#loginModal .modal-header {
+  background-color: #15016d;
+}
+
+#loginModal .modal-header h3 {
+  color: white;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
